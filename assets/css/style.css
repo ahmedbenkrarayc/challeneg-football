@@ -1,0 +1,257 @@
+*{
+    background-image: url(../images/Design\ sans\ titre\ \(2\).png);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.main_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
+
+.changement_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust columns dynamically */
+    grid-auto-rows: 200px; /* Fixed height for each row */
+    gap: 20px; /* Spacing between rows and columns */
+    width: 80%; /* Set a specific width for the container */
+    margin: 0 auto; /* Center the container */
+    background-color: #f0f0f0; /* Optional styling for visibility */
+    padding: 10px;
+    margin-top: 80px;
+}
+
+
+.soccer_field{
+    background-image: url(https://chosen11.com/assets/images/playground-images/field_grass_striped.svg);
+    background-repeat: no-repeat;
+   width: 527px;
+   height: 800px;
+   background-size: cover;
+   
+   opacity: 100%;
+   display: grid;
+   grid-template-columns: 10px auto 10px ;
+   grid-template-rows: 23px 1fr 2fr 2fr 2fr 1fr 23px ;
+   grid-template-areas: 
+   ". . ."
+   ". . ."
+   ". attack ."
+   ". center ."
+   ". defence ."
+   ". goalkeeper ."
+
+   ;
+}
+
+.hh{
+    background-image: none;
+    background-color: red;
+    width: 80px;
+    height: 120px;
+}
+
+.goalkeeper{
+    grid-area: goalkeeper;
+    background-image: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.defence{
+    grid-area: defence;
+    background-image: none;
+    display:flex;  
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.center{
+    grid-area: center;
+    background-image: none;
+    justify-content: center;
+    display:flex; 
+    justify-content: center;
+    flex-direction: row;
+    align-items: center; 
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.attack{
+    grid-area: attack;
+    background-image: none;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+}
+
+
+
+.player_card {
+    width: 75px ;
+    height: 110px ;
+    background-image: url(https://www.futbin.com/design2/img/static/evolutions/placeholder-card-normal.webp);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.player_card_sdm{
+    width: 75px ;
+    height: 110px ;
+    background-image: url(https://www.futbin.com/design2/img/static/evolutions/placeholder-card-normal.webp);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   margin-top: 70px;
+
+ }
+ .player_card_attack{
+    width: 75px ;
+    height: 110px ;
+     background-image: url(https://www.futbin.com/design2/img/static/evolutions/placeholder-card-normal.webp);
+     background-size: cover;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ 
+ }
+ .player_card_attack_st{
+    width: 75px ;
+    height: 110px ;
+    background-image: url(https://www.futbin.com/design2/img/static/evolutions/placeholder-card-normal.webp);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+ 
+ }
+ 
+ .delet_update_button{
+    width: 50%;
+    height: 30px;
+    background-color: rgb(1, 114, 1);
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    border-radius: 25px;
+    place-self: center;
+    margin-top: auto;
+ }
+
+ .position_icon{
+    width: 65%;
+    height: 30px;
+    background-color: rgb(1, 114, 1);
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    border-radius: 25px;
+    place-self: center;
+    margin-top: auto;   
+ }
+
+
+ 
+.top_card_side {
+        background-image: none;
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  .player-master-info{
+ background-image: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  }
+  .player-master-info p{
+        background-image: none;
+        font-size: 6px;
+
+
+      color: #e9cc74;
+  }
+  .player-master-info img{
+        background-image: none;
+      width: 10px;
+      height: auto;
+  }
+  .player-picture{
+        background-image: none;
+      width: 65%;
+      height: 90%;
+      place-self: center;
+      margin-bottom:px;
+
+  }
+  
+  .buttom_card_side{
+        background-image: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 29px;
+  }
+  .player_name{
+        background-image: none;
+      color: #e9cc74;
+      font-size: 10px;
+  
+  }
+  .player-features{
+        background-image: none;
+      display: flex;
+      flex-direction: row;
+      gap: 7px;
+  }
+
+.player-features-col{
+    background-image: none;
+  }
+
+  .player-features-col span{
+        background-image: none;
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
+  }
+
+  .player-feature-title{
+        background-image: none;
+      color: #e9cc74;
+      font-size: 7px;
+  }
+  .player-feature-value{
+        background-image: none;
+      color: #e9cc74;
+  font-weight: bold;
+  font-size: 7px;
+  
+  }
+
+
